@@ -1,0 +1,11 @@
+streamlit
+yfinance
+pandas
+numpy
+matplotlib
+xgboost
+scikit-learn
+joblib
+google-generativeai
+pyngrok
+seaborn
