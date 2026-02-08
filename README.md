@@ -19,6 +19,17 @@ This project demonstrates how **data-driven forecasting pipelines** can support 
 
 ---
 
+## Why This Matters
+
+Most retail investors rely on intuition, social media sentiment, or short-term price movements when making buy/sell decisions.
+
+This project reframes stock forecasting as a **decision-support system** rather than a price prediction tool, prioritizing:
+- Directional correctness over exact price values
+- Robust evaluation under real-world market noise
+- Practical deployment over offline experimentation
+
+---
+
 ## Forecasting Scope
 
 - **Asset**: HDFC Bank  
@@ -68,6 +79,16 @@ Directional accuracy is prioritized to better reflect real trading decisions.
 
 ---
 
+## End-to-End ML Pipeline
+
+1. Historical price data ingestion using Yahoo Finance
+2. Feature engineering using lag variables and technical indicators
+3. Time-series and ML model training (ARIMA, Auto-ARIMA, XGBoost)
+4. Model evaluation using error and directional metrics
+5. Model serialization and local deployment via Streamlit
+
+---
+
 ## System Architecture
 
 ![Architecture](architecture.png)
@@ -86,6 +107,20 @@ Directional accuracy is prioritized to better reflect real trading decisions.
 - Statsmodels
 - Streamlit
 - yFinance
+
+---
+
+## Scope & Limitations
+
+This repository focuses on forecasting and local deployment.
+
+It intentionally does NOT include:
+- Live trading or brokerage integration
+- Real-time data streaming
+- Automated buy/sell execution
+- Production-grade cloud deployment
+
+The goal is to demonstrate **end-to-end ML system design**, not trading automation.
 
 ---
 
